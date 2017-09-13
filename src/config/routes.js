@@ -47,14 +47,43 @@ const ROUTES = {
     // 走马灯
     CAROUSEL: '/carousel',
 
+    // 宫格
+    GRID: '/grid',
+
     // 弹出层
     POPUP: '/popup',
+
+    // 标签栏
+    TABBAR: '/tabbar',
+
+    // 购买页
+    PAGE_BUY: '/page-buy',
+
+    // 滑动操作
+    SWIPEACTION: '/swipeaction',
+
+    // 标签页
+    TABS: '/tabs',
+
+    // 二维码生成
+    QRCODE: '/qrcode',
+
+    // 上传图片
+    IMAGEPICKER: '/imagepicker',
+
+    // 进度条
+    PROGRESS: '/progress',
+
+    // 步骤条
+    STEPS: '/steps',
 }
 const ROUTES_TITLE = {}
 
 ROUTES_TITLE[ROUTES.TIMER] = '定时器'
 ROUTES_TITLE[ROUTES.LIST_VIEW] = '下拉加载'
 ROUTES_TITLE[ROUTES.LOADING] = '加载中'
+ROUTES_TITLE[ROUTES.QRCODE] = '二维码生成'
+
 ROUTES_TITLE[ROUTES.INPUT_ITEM] = '文本输入'
 ROUTES_TITLE[ROUTES.TEXTAREA_ITEM] = '多行输入'
 ROUTES_TITLE[ROUTES.RADIO] = '单选框'
@@ -65,8 +94,20 @@ ROUTES_TITLE[ROUTES.PICKER] = '选择器'
 ROUTES_TITLE[ROUTES.DATE_PICKER] = '日期选择器'
 ROUTES_TITLE[ROUTES.SLIDER] = '滑动输入条'
 ROUTES_TITLE[ROUTES.VALIDATE] = '表单验证'
+ROUTES_TITLE[ROUTES.IMAGEPICKER] = '上传图片'
+
 ROUTES_TITLE[ROUTES.CAROUSEL] = '走马灯'
+ROUTES_TITLE[ROUTES.GRID] = '宫格'
+ROUTES_TITLE[ROUTES.STEPS] = '步骤条'
+
 ROUTES_TITLE[ROUTES.POPUP] = '弹出层'
+ROUTES_TITLE[ROUTES.SWIPEACTION] = '滑动操作'
+ROUTES_TITLE[ROUTES.PROGRESS] = '进度条'
+
+ROUTES_TITLE[ROUTES.TABBAR] = '标签栏'
+ROUTES_TITLE[ROUTES.TABS] = '标签页'
+
+ROUTES_TITLE[ROUTES.PAGE_BUY] = '购买页'
 
 export default ROUTES
 export { ROUTES_TITLE }

@@ -1,18 +1,17 @@
 @import '../../config/theme.less';
 
-
 @radio-height: 50px;
 
 .radiocontainer {
     float: left;
-    height: @radio-height;
     overflow: hidden;
     border-radius: 6px;
     color: @main-color;
     margin-right: 20px;
     margin-bottom: 20px;
     position: relative;
-    transition: all 0.2s ease;
+    height: @radio-height;
+    transition: all 0.15s ease;
     border: 2px solid @main-color;
 
     input {
@@ -25,10 +24,10 @@
     }
 
     label {
+        text-align: center;
         padding-left: 20px;
         padding-right: 20px;   
         line-height: @radio-height;
-        text-align: center;
     }
 }
 

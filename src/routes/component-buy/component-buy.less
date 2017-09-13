@@ -1,0 +1,55 @@
+@import '../../config/theme.less';
+
+.listcontainer {
+    padding-left: @basic-space * 2;
+}
+
+.titlecontainer {
+    img {
+        float: left;
+        width: 180px;
+        height: 180px;
+        border-radius: 6px;
+        margin-top: -50px;
+        background: #fff;
+        margin-right: 20px;
+        border: 2px solid #e0e0e0;
+    }
+    p {
+        max-width: 420px;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        span {
+            color: @main-color
+        }
+    }
+    .closebtn {
+        position: absolute;
+        top: 10px!important;
+        right: 10px!important;
+    }
+    
+    :global(.am-list-line) {
+        overflow: visible!important
+    }
+
+    :global(.am-list-content) {
+        overflow: visible!important
+    }
+}
+.restnum {
+    color: #666;
+    font-size: 26px;
+}
+
+.button {
+    border-radius: 0;
+}
+
+.listcontainer {
+    :global(.am-list-item) {
+        overflow: visible!important
+    }
+}
+

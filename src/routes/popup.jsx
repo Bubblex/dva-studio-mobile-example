@@ -7,7 +7,7 @@ import {
     Popup,
 } from 'antd-mobile'
 
-import BuyExample from './buy'
+import BuyExample from './component-buy'
 
 const ListItem = List.Item
 

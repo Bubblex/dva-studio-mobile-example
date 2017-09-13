@@ -1,0 +1,41 @@
+@import '../../config/theme.less';
+
+.title {
+    color: red;
+}
+
+.freight {
+    font-size: 32px;
+    color: #888;
+}
+
+.choosesize {
+    font-size: 30px;
+}
+
+.tabbarcontainer {
+    display: block;
+    :global(.am-tab-bar-bar) {
+        width: 35%;
+    }
+}
+
+.righttabbarcontainer {
+    display: block;
+    :global(.am-tab-bar-bar) {
+        width: 65%;
+        float: right;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+    :global(.am-tab-bar-tab:first-child) {
+        background: rgb(255,136,85);
+    }
+    :global(.am-tab-bar-tab:last-child) {
+        background: rgb(255,68,68);
+    }
+    :global(.am-tab-bar-tab-title) {
+        font-size: 28px;
+    }
+}

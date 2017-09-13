@@ -30,7 +30,7 @@ class RadioExample extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            active: 1,
+            active: 2,
         }
     }
 
@@ -41,6 +41,9 @@ class RadioExample extends React.Component {
             },
         } = this.props
 
+        const {
+            active,
+        } = this.state
 
         return (
             <div>
@@ -95,7 +98,7 @@ class RadioExample extends React.Component {
                                         type='radio'
                                         {
                                             ...getFieldProps(`button.${index}`, {
-                                                ...getRadioProps(value, 1),
+                                                ...getRadioProps(value, active),
                                             })
                                         }
                                     />

@@ -10,6 +10,7 @@ import {
 
 import {
     getCheckboxProps,
+    filterUndefinedForArray,
 } from '../utils/library'
 
 const {
@@ -26,6 +27,7 @@ const data = [
 class CheckboxExample extends React.Component {
     render() {
         const {
+            form,
             form: {
                 getFieldProps,
             },
@@ -52,6 +54,15 @@ class CheckboxExample extends React.Component {
                 <AgreeItem {...getFieldProps('agree')}>
                     我同意《用户协议》
                 </AgreeItem>
+                <List renderHeader='获取值'>
+                    <Button
+                        onClick={() => {
+                            console.log(filterUndefinedForArray(form.getFieldsValue().list))
+                        }}
+                    >
+                        打印多选值
+                    </Button>
+                </List>
             </div>
         )
     }
