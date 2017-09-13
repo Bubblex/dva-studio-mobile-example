@@ -25,11 +25,12 @@ class Catalogue extends React.Component {
                         <span>{SITE.TITLE}</span>
                     </h3>
                 </WingBlank>
-                <List>
+                <List renderHeader='功能'>
                     <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.TIMER) }}>{ROUTES_TITLE[ROUTES.TIMER]}</Item>
                     <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.LIST_VIEW) }}>{ROUTES_TITLE[ROUTES.LIST_VIEW]}</Item>
                     <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.LOADING) }}>{ROUTES_TITLE[ROUTES.LOADING]}</Item>
                     <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.QRCODE) }}>{ROUTES_TITLE[ROUTES.QRCODE]}</Item>
+                    <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.CLIPBOARD) }}>{ROUTES_TITLE[ROUTES.CLIPBOARD]}</Item>
                 </List>
                 <List renderHeader='表单'>
                     <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.INPUT_ITEM) }}>{ROUTES_TITLE[ROUTES.INPUT_ITEM]}</Item>

@@ -76,6 +76,9 @@ const ROUTES = {
 
     // 步骤条
     STEPS: '/steps',
+
+    // 复制文本
+    CLIPBOARD: '/clipboard',
 }
 const ROUTES_TITLE = {}
 
@@ -83,6 +86,7 @@ ROUTES_TITLE[ROUTES.TIMER] = '定时器'
 ROUTES_TITLE[ROUTES.LIST_VIEW] = '下拉加载'
 ROUTES_TITLE[ROUTES.LOADING] = '加载中'
 ROUTES_TITLE[ROUTES.QRCODE] = '二维码生成'
+ROUTES_TITLE[ROUTES.CLIPBOARD] = '复制文本'
 
 ROUTES_TITLE[ROUTES.INPUT_ITEM] = '文本输入'
 ROUTES_TITLE[ROUTES.TEXTAREA_ITEM] = '多行输入'

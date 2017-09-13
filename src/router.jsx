@@ -3,69 +3,42 @@ import { Router, Route } from 'dva/router'
 
 import ROUTES from './config/routes'
 
-import Home from './routes/home'
-import Catalogue from './routes/catalogue'
-import ExampleBasic from './routes/example-basic'
-import Timer from './routes/timer'
-import ListView from './routes/list-view'
-import Loading from './routes/loading'
-import InputItemExample from './routes/input-item'
-import TextareaItemExample from './routes/textarea-item'
-import RadioExample from './routes/radio'
-import CheckboxExample from './routes/checkbox'
-import SwitchExample from './routes/switch'
-import StepperExample from './routes/stepper'
-import PickerExample from './routes/picker'
-import DatePickerExample from './routes/date-picker'
-import SliderExample from './routes/slider'
-import Validate from './routes/validate'
-import Carousel from './routes/carousel'
-import Popup from './routes/popup'
-import GridExample from './routes/grid'
-import TabbarExample from './routes/tabbar'
-import PAGEBUYEXAMPLE from './routes/page-buy'
-import SWIPEACTIONEXAMPLE from './routes/swipeaction'
-import TabsExample from './routes/tabs'
-import QrcodeExample from './routes/qrcode'
-import ImagePickerExample from './routes/imagepicker'
-import ProgressExample from './routes/progress'
-import StepsExample from './routes/steps'
-
 function RouterConfig({ history }) {
     return (
         <Router history={history}>
-            <Route path={ROUTES.HOME} component={Home} />
-            <Route path={ROUTES.CATALOGUE} component={Catalogue} />
-            <Route component={ExampleBasic}>
-                <Route path={ROUTES.TIMER} component={Timer} />
-                <Route path={ROUTES.LIST_VIEW} component={ListView} />
-                <Route path={ROUTES.LOADING} component={Loading} />
-                <Route path={ROUTES.QRCODE} component={QrcodeExample} />
+            <Route path={ROUTES.HOME} component={require('../src/routes/home')} />
+            <Route path={ROUTES.CATALOGUE} component={require('../src/routes/catalogue')} />
+            <Route component={require('../src/routes/example-basic')}>
+                <Route path={ROUTES.TIMER} component={require('../src/routes/timer')} />
+                <Route path={ROUTES.LIST_VIEW} component={require('../src/routes/list-view')} />
+                <Route path={ROUTES.LOADING} component={require('../src/routes/loading')} />
+                <Route path={ROUTES.QRCODE} component={require('../src/routes/qrcode')} />
+                <Route path={ROUTES.CLIPBOARD} component={require('../src/routes/clipboard')} />
 
-                <Route path={ROUTES.INPUT_ITEM} component={InputItemExample} />
-                <Route path={ROUTES.TEXTAREA_ITEM} component={TextareaItemExample} />
-                <Route path={ROUTES.RADIO} component={RadioExample} />
-                <Route path={ROUTES.CHECKBOX} component={CheckboxExample} />
-                <Route path={ROUTES.SWITCH} component={SwitchExample} />
-                <Route path={ROUTES.STEPPER} component={StepperExample} />
-                <Route path={ROUTES.PICKER} component={PickerExample} />
-                <Route path={ROUTES.DATE_PICKER} component={DatePickerExample} />
-                <Route path={ROUTES.SLIDER} component={SliderExample} />
-                <Route path={ROUTES.VALIDATE} component={Validate} />
-                <Route path={ROUTES.IMAGEPICKER} component={ImagePickerExample} />
+                <Route path={ROUTES.INPUT_ITEM} component={require('../src/routes/input-item')} />
+                <Route path={ROUTES.TEXTAREA_ITEM} component={require('../src/routes/textarea-item')} />
+                <Route path={ROUTES.RADIO} component={require('../src/routes/radio')} />
+                <Route path={ROUTES.CHECKBOX} component={require('../src/routes/checkbox')} />
+                <Route path={ROUTES.SWITCH} component={require('../src/routes/switch')} />
+                <Route path={ROUTES.STEPPER} component={require('../src/routes/stepper')} />
+                <Route path={ROUTES.PICKER} component={require('../src/routes/picker')} />
+                <Route path={ROUTES.DATE_PICKER} component={require('../src/routes/date-picker')} />
+                <Route path={ROUTES.SLIDER} component={require('../src/routes/slider')} />
+                <Route path={ROUTES.VALIDATE} component={require('../src/routes/validate')} />
+                <Route path={ROUTES.IMAGEPICKER} component={require('../src/routes/imagepicker')} />
 
-                <Route path={ROUTES.CAROUSEL} component={Carousel} />
-                <Route path={ROUTES.GRID} component={GridExample} />
-                <Route path={ROUTES.STEPS} component={StepsExample} />
+                <Route path={ROUTES.CAROUSEL} component={require('../src/routes/carousel')} />
+                <Route path={ROUTES.GRID} component={require('../src/routes/grid')} />
+                <Route path={ROUTES.STEPS} component={require('../src/routes/steps')} />
 
-                <Route path={ROUTES.POPUP} component={Popup} />
-                <Route path={ROUTES.SWIPEACTION} component={SWIPEACTIONEXAMPLE} />
-                <Route path={ROUTES.PROGRESS} component={ProgressExample} />
+                <Route path={ROUTES.POPUP} component={require('../src/routes/popup')} />
+                <Route path={ROUTES.SWIPEACTION} component={require('../src/routes/swipeaction')} />
+                <Route path={ROUTES.PROGRESS} component={require('../src/routes/progress')} />
 
-                <Route path={ROUTES.TABBAR} component={TabbarExample} />
-                <Route path={ROUTES.TABS} component={TabsExample} />
+                <Route path={ROUTES.TABBAR} component={require('../src/routes/tabbar')} />
+                <Route path={ROUTES.TABS} component={require('../src/routes/tabs')} />
 
-                <Route path={ROUTES.PAGE_BUY} component={PAGEBUYEXAMPLE} />
+                <Route path={ROUTES.PAGE_BUY} component={require('../src/routes/page-buy')} />
             </Route>
         </Router>
     )
