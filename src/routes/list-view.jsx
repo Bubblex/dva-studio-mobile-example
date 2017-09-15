@@ -50,6 +50,14 @@ class ListViews extends React.Component {
         }
     }
 
+    componentWillUnmount() {
+        this.props.dispatch({
+            type: 'user/changeUserInfo',
+            userInfo: [],
+            userInfoPaginate: {},
+        })
+    }
+
     onEndReached = () => {
         const {
             dispatch,

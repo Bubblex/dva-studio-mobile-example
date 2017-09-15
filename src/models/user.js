@@ -7,7 +7,7 @@ export default {
         userInfoPaginate: {},
     },
     reducers: {
-        saveUserInfo(state, { userInfo, userInfoPaginate }) {
+        changeUserInfo(state, { userInfo, userInfoPaginate }) {
             return {
                 ...state,
                 userInfo,
@@ -26,7 +26,7 @@ export default {
 
             if (status === 1) {
                 yield put({
-                    type: 'saveUserInfo',
+                    type: 'changeUserInfo',
                     userInfo: data.user,
                     userInfoPaginate: data.paginate,
                 })
