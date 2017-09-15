@@ -10,6 +10,7 @@ const app = dva({
 app.use({})
 
 app.model(require('./models/user'))
+app.model(require('./models/imagepicker'))
 
 app.router(require('./router'))
 
