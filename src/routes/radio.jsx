@@ -85,12 +85,12 @@ class RadioExample extends React.Component {
                         {
                             data.map(({ value, label }, index) => (
                                 <div
-                                    className={this.state.active === parseInt(`${index}`) + 1 ?
+                                    className={this.state.active === parseInt(`${index}`, 10) + 1 ?
                                     classNames(styles.radiocontainer, styles.active) :
                                     styles.radiocontainer}
                                     onClick={() => {
                                         this.setState({
-                                            active: parseInt(`${index}`) + 1,
+                                            active: parseInt(`${index}`, 10) + 1,
                                         })
                                     }}
                                 >

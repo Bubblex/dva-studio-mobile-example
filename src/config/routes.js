@@ -11,8 +11,8 @@ const ROUTES = {
     // 长列表
     LIST_VIEW: '/list-view',
 
-    // 加载中
-    LOADING: '/loading',
+    // 百度地图
+    BAIDU_MAP: '/baidu-map',
 
     // 文本输入框
     INPUT_ITEM: '/input-item',
@@ -84,7 +84,7 @@ const ROUTES_TITLE = {}
 
 ROUTES_TITLE[ROUTES.TIMER] = '定时器'
 ROUTES_TITLE[ROUTES.LIST_VIEW] = '下拉加载'
-ROUTES_TITLE[ROUTES.LOADING] = '加载中'
+ROUTES_TITLE[ROUTES.BAIDU_MAP] = '百度地图'
 ROUTES_TITLE[ROUTES.QRCODE] = '二维码生成'
 ROUTES_TITLE[ROUTES.CLIPBOARD] = '复制文本'
 

@@ -11,7 +11,7 @@ function RouterConfig({ history }) {
             <Route component={require('../src/routes/example-basic')}>
                 <Route path={ROUTES.TIMER} component={require('../src/routes/timer')} />
                 <Route path={ROUTES.LIST_VIEW} component={require('../src/routes/list-view')} />
-                <Route path={ROUTES.LOADING} component={require('../src/routes/loading')} />
+                <Route path={ROUTES.BAIDU_MAP} component={require('../src/routes/baidumap')} />
                 <Route path={ROUTES.QRCODE} component={require('../src/routes/qrcode')} />
                 <Route path={ROUTES.CLIPBOARD} component={require('../src/routes/clipboard')} />
 
