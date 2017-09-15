@@ -11,6 +11,7 @@ app.use({})
 
 app.model(require('./models/user'))
 app.model(require('./models/imagepicker'))
+app.model(require('./models/updatePhone'))
 
 app.router(require('./router'))
 

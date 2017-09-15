@@ -39,6 +39,7 @@ function RouterConfig({ history }) {
                 <Route path={ROUTES.TABS} component={require('../src/routes/tabs')} />
 
                 <Route path={ROUTES.PAGE_BUY} component={require('../src/routes/page-buy')} />
+                <Route path={ROUTES.PAGE_UPDATE_PHONE} component={require('../src/routes/page-update-phone')} />
             </Route>
         </Router>
     )

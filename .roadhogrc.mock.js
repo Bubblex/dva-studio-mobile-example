@@ -1,8 +1,10 @@
 import Mock from 'mockjs'
 import user from './mock/user'
+import updatePhone from './mock/updatePhone'
 
 export default {
     ...user,
+    ...updatePhone,
     'POST /api/login': (req, res) => {
         if ((req.body.account === 'username' || req.body.account === 'admin') && req.body.password === '123456') {
             if (req.body.account !== 'admin') {

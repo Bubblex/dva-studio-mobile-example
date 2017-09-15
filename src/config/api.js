@@ -11,6 +11,12 @@ export default {
     // 获取用户列表
     FETCH_USERS: `${PREFIX}/users`,
 
+    // 发送验证码
+    VERIFY_MESSAGE: `${PREFIX}/verify/message`,
+
+    // 绑定/验证手机号
+    MEMBER_BIND: `${PREFIX}/member/bind`,
+
     // 获取用户详细信息
     FETCH_USER_INFO: `${PREFIX}/user/info`,
 }

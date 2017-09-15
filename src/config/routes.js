@@ -79,6 +79,9 @@ const ROUTES = {
 
     // 复制文本
     CLIPBOARD: '/clipboard',
+
+    // 重新绑定手机号
+    PAGE_UPDATE_PHONE: '/page-update-phone',
 }
 const ROUTES_TITLE = {}
 
@@ -112,6 +115,7 @@ ROUTES_TITLE[ROUTES.TABBAR] = '标签栏'
 ROUTES_TITLE[ROUTES.TABS] = '标签页'
 
 ROUTES_TITLE[ROUTES.PAGE_BUY] = '购买页'
+ROUTES_TITLE[ROUTES.PAGE_UPDATE_PHONE] = '重新绑定手机号'
 
 export default ROUTES
 export { ROUTES_TITLE }
