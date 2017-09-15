@@ -72,3 +72,13 @@ export function filterUndefinedForArray(list = []) {
 
     return result
 }
+
+/**
+ * 处理请求参数
+ *
+ * @param {object} params 请求参数
+ * @return {string} JSON 字符串
+ */
+export function query(params) {
+    return JSON.stringify(params)
+}
