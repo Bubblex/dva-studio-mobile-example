@@ -29,6 +29,7 @@ const DEFAULT = {
  * @return {object} 响应参数或 error
  */
 function checkStatus(response) {
+    Toast.hide()
     if (response.status >= 200 && response.status < 300) {
         return response
     }
@@ -99,6 +100,8 @@ export default function request(url, options) {
         checkToken: isCheckToken,
         ...fetchOptions
     } = Object.assign({}, DEFAULT, options)
+
+    Toast.loading('加载中...', 0)
 
     return fetch(url, fetchOptions)
         .then(checkStatus)
