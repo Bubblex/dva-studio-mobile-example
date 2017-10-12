@@ -62,6 +62,7 @@ class Catalogue extends React.Component {
                 <List renderHeader='示例页面'>
                     <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.PAGE_BUY) }}>{ROUTES_TITLE[ROUTES.PAGE_BUY]}</Item>
                     <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.PAGE_UPDATE_PHONE) }}>{ROUTES_TITLE[ROUTES.PAGE_UPDATE_PHONE]}</Item>
+                    <Item arrow='horizontal' onClick={() => { this.redirect(ROUTES.PAGE_LINE_G2) }}>{ROUTES_TITLE[ROUTES.PAGE_LINE_G2]}</Item>
                 </List>
             </div>
         )
