@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'dva'
+import { List } from 'antd-mobile'
 
 class PageG2Line extends React.Component {
     componentDidMount() {
@@ -69,9 +70,11 @@ class PageG2Line extends React.Component {
     render() {
         return (
             <div>
-                <div style={{ width: '100%', height: '300px' }}>
-                    <canvas id='c1' style={{ width: '100%', height: '100%' }} />
-                </div>
+                <List renderHeader='g2折线图'>
+                    <div style={{ width: '100%', height: '300px' }}>
+                        <canvas id='c1' style={{ width: '100%', height: '100%' }} />
+                    </div>
+                </List>
             </div>
         )
     }

@@ -41,6 +41,7 @@ function RouterConfig({ history }) {
                 <Route path={ROUTES.PAGE_BUY} component={require('../src/routes/page-buy')} />
                 <Route path={ROUTES.PAGE_UPDATE_PHONE} component={require('../src/routes/page-update-phone')} />
                 <Route path={ROUTES.PAGE_LINE_G2} component={require('../src/routes/page-line-g2')} />
+                <Route path={ROUTES.PAGE_LINE_ECHART} component={require('../src/routes/page-line-echart')} />
             </Route>
         </Router>
     )

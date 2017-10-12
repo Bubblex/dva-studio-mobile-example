@@ -85,6 +85,9 @@ const ROUTES = {
 
     // g2折线图
     PAGE_LINE_G2: '/page-line-g2',
+
+    // echart折线图
+    PAGE_LINE_ECHART: '/page_line_echart',
 }
 const ROUTES_TITLE = {}
 
@@ -120,6 +123,7 @@ ROUTES_TITLE[ROUTES.TABS] = '标签页'
 ROUTES_TITLE[ROUTES.PAGE_BUY] = '购买页'
 ROUTES_TITLE[ROUTES.PAGE_UPDATE_PHONE] = '重新绑定手机号'
 ROUTES_TITLE[ROUTES.PAGE_LINE_G2] = 'g2折线图'
+ROUTES_TITLE[ROUTES.PAGE_LINE_ECHART] = 'echart折线图'
 
 export default ROUTES
 export { ROUTES_TITLE }
